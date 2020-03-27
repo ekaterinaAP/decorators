@@ -3,7 +3,7 @@ from datetime import datetime
 
 def decor_logger(function_to_decor):
     def get_inf_function(*args, **qwargs):
-        with open("log.txt", "w") as file:
+        with open("log.txt", "a") as file:
             # file.seek(0, 2)
             time = datetime.today()
             args_v = args
