@@ -16,7 +16,7 @@ def param_decor_logger(path):
                 file.write(f'имя функции: {name_function} \n')
                 file.write('\n')
 
-            function_to_decor(*args, **qwargs)
+            return function_to_decor(*args, **qwargs)
         return get_inf_function
     return decor_logger
 
